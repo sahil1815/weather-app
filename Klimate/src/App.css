@@ -42,7 +42,7 @@ body {
   background-attachment: fixed;
 }
 
-/* Background image overlay (optional) */
+/* Background image overlay */
 .background {
   position: relative;
   min-height: 100vh;
@@ -144,7 +144,7 @@ body {
   gap: var(--gap);
 }
 
-/* Desktop 2-column layout (requested) */
+/* Desktop */
 @media (min-width: 1024px) {
   .two-col-desktop {
     grid-template-columns: 1.2fr 1fr; /* left column vs right column */
@@ -167,7 +167,7 @@ body {
   }
 }
 
-/* ========== Cards (glass) ========== */
+/* ========== Cards ========== */
 .weather-card {
   background: var(--glass);
   border: 1px solid var(--glass-border);
@@ -184,7 +184,7 @@ body {
   background: rgba(255, 255, 255, 0.14);
 }
 
-/* ========== MainWeather specifics ========== */
+/* ========== MainWeather ========== */
 .location-info {
   display: flex;
   flex-direction: column;
@@ -232,7 +232,7 @@ body {
   justify-content: center;
 }
 
-/* Scale down desktop temp a bit to make space for forecast alongside */
+/* Scale down desktop temp a bit to make space for forecast */
 @media (min-width: 1024px) {
   .current-temp {
     font-size: 3rem;
@@ -279,7 +279,7 @@ body {
   color: var(--text-dim);
 }
 
-/* Air Quality block */
+/* Air Quality */
 .air-quality-section {
   background: var(--glass-soft);
   border: 1px solid var(--glass-border-soft);
@@ -330,7 +330,7 @@ body {
   color: var(--text-strong);
 }
 
-/* AQI color helpers (assign in JSX via inline styles or classes if you prefer) */
+/* AQI color helpers */
 .aqi-good {
   background: var(--aqi-good);
   border-color: var(--aqi-good);
@@ -490,7 +490,7 @@ body {
 
 /* ========== Responsive ========== */
 @media (max-width: 1023.98px) {
-  /* Mobile/tablet: keep stacked layout; grid rules from desktop don’t apply */
+  /* Mobile/tablet */
   .main-content {
     padding: 1rem;
     gap: 1rem;
